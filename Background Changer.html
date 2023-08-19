@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- CSS integrated into HTML -->
+
+<html lang="en">
+    <head>
+        <!-- Classes for formatting -->
+        <style>
+
+            .centered
+            {
+                text-align: center;
+            }
+
+            .large
+            {
+                font-size: large;
+            }
+
+            .medium
+            {
+                font-size: medium;
+            }
+
+            h1
+            {
+                color: midnightblack;
+                padding-top: 50px;
+                font-family: Calibri;
+            }
+
+            img
+            {
+                border-radius: 50%;
+            }
+
+        </style>
+        <title>Background changer</title>
+    </head>
+    
+    <body class="centered">
+        <h1>Background Color Changer</h1>
+        <div class="large">
+            I am Raoul, nice to meet you!
+        </div>
+        <div class="medium">
+            Enter your favorite color by pressing the button below
+        </div>
+        <button onclick="colorInput()"id="changeBackground"><b><img alt="A button" src="button.jpg"></b></button>
+        <script>
+            let body = document.querySelector('body');
+            function changeColor(color) {
+                body.style.backgroundColor = color;
+            }
+            function colorInput() {
+                let color = prompt("What color would you like?");
+                changeColor(color);
+            }
+        </script>
+    </body>
+</html>
