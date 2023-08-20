@@ -36,7 +36,7 @@
         </style>
         <title>Background changer</title>
     </head>
-    
+
     <body class="centered">
         <h1>Background Color Changer</h1>
         <div class="large">
@@ -45,13 +45,13 @@
         <div class="medium">
             Enter your favorite color by pressing the button below
         </div>
-        <button onclick="colorInput()"id="changeBackground"><b><img alt="A button" src="button.jpg"></b></button>
+        <button onclick="getColor()"id="changeBackground"><b><img alt="button" src="button.jpg"></b></button>
         <script>
             let body = document.querySelector('body');
             function changeColor(color) {
                 body.style.backgroundColor = color;
             }
-            function colorInput() {
+            function getColor() {
                 let color = prompt("What color would you like?");
                 changeColor(color);
             }
