@@ -1,42 +1,11 @@
 <!DOCTYPE html>
-<!-- CSS integrated into HTML -->
 
 <html lang="en">
     <head>
         <!-- Classes for formatting -->
-        <style>
-
-            .centered
-            {
-                text-align: center;
-            }
-
-            .large
-            {
-                font-size: large;
-            }
-
-            .medium
-            {
-                font-size: medium;
-            }
-
-            h1
-            {
-                color: midnightblack;
-                padding-top: 50px;
-                font-family: Calibri;
-            }
-
-            img
-            {
-                border-radius: 50%;
-            }
-
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>Background changer</title>
     </head>
-
     <body class="centered">
         <h1>Background Color Changer</h1>
         <div class="large">
@@ -46,15 +15,6 @@
             Enter your favorite color by pressing the button below
         </div>
         <button onclick="getColor()"id="changeBackground"><b><img alt="button" src="button.jpg"></b></button>
-        <script>
-            let body = document.querySelector('body');
-            function changeColor(color) {
-                body.style.backgroundColor = color;
-            }
-            function getColor() {
-                let color = prompt("What color would you like?");
-                changeColor(color);
-            }
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
